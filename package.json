@@ -1,0 +1,37 @@
+{
+  "name": "vue-async-mount-component",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.5",
+  "description": "",
+  "author": {
+    "name": "Alex Liu <dsa1314@gmail.com>",
+    "url": "https://github.com/Mini-ghost"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "dev": "pnpm -C playgrounds/vite dev",
+    "lint": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.20.0",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  }
+}
